@@ -4,36 +4,53 @@ import { ModeToggle } from "@/components/dark-mode-toggle";
 export default function Home() {
   return (
     <>
-      <header className="border-2 border-black w-full">
-        <nav className="flex justify-between border-2 border-red-500 p-8 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
-          <a className="border-2 border-green-500" href="/">
-            Fantastical Names Generator
-          </a>
-          <ul className="border-2 border-blue-500 lg:flex flex-row gap-8 items-center justify-center hidden">
+      <header className="w-full">
+        <nav className="flex justify-between p-8 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
+          <div className="flex flex-row gap-4 items-center justify-center">
+            <a href="/">
+              <Image src="/logo.png" width={50} height={50} alt="Site Logo" />
+            </a>
+            <a className="text-2xl" href="/">
+              Fantastical Names Generator
+            </a>
+          </div>
+          <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
             <li>
-              <a href="/">Alchemy Shop</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                Alchemy Shop
+              </a>
             </li>
             <li>
-              <a href="/">Blacksmith</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                Blacksmith
+              </a>
             </li>
             <li>
-              <a href="/">General Shop</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                General Shop
+              </a>
             </li>
             <li>
-              <a href="/">Magic Shop</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                Magic Shop
+              </a>
             </li>
             <li>
-              <a href="/">Stables</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                Stables
+              </a>
             </li>
             <li>
-              <a href="/">Tavern</a>
+              <a className="hover:border-b-2 hover:border-primary" href="/">
+                Tavern
+              </a>
             </li>
-            <li className="border border-slate-800 pt-6"></li>
+            <li className="border border-primary pt-6"></li>
             <li>
               <ModeToggle />
             </li>
           </ul>
-          <button className="text-black w-6 h-6 block lg:hidden">
+          <button className="w-6 h-6 block lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
