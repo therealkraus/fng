@@ -10,38 +10,56 @@ export default function Home() {
             <a href="/">
               <Image src="/logo.png" width={50} height={50} alt="Site Logo" />
             </a>
-            <a className="text-2xl" href="/">
-              Fantastical Names Generator
+            <a className="text-xl font-semibold" href="/">
+              FANTASTICAL NAME GENERATOR
             </a>
           </div>
           <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 Alchemy Shop
               </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 Blacksmith
               </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 General Shop
               </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 Magic Shop
               </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 Stables
               </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-primary" href="/">
+              <a
+                className="hover:border-b-2 hover:border-primary hover:pb-2"
+                href="/"
+              >
                 Tavern
               </a>
             </li>
