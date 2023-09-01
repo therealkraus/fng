@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ModeToggle } from "@/components/dark-mode-toggle";
 
 export default function Home() {
   return (
@@ -26,6 +27,10 @@ export default function Home() {
             </li>
             <li>
               <a href="/">Tavern</a>
+            </li>
+            <li className="border border-slate-800 pt-6"></li>
+            <li>
+              <ModeToggle />
             </li>
           </ul>
           <button className="text-black w-6 h-6 block lg:hidden">
