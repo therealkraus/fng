@@ -5,7 +5,7 @@ export default function NavItem(props: { name: string; link: string }) {
     <>
       <li>
         <a
-          className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
+          className="after:m-auto after:block after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-500 hover:after:w-full after:mt-1 text-lg font-semibold"
           href={link}
         >
           {name}

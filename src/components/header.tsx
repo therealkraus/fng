@@ -21,7 +21,7 @@ export default function Header() {
           <NavItem name={"Magic Shop"} link={"/"} />
           <NavItem name={"Stables"} link={"/"} />
           <NavItem name={"Tavern"} link={"/"} />
-          <li className="border border-primary pt-6"></li>
+          <li className="border border-primary pt-6 rounded-full"></li>
           <li>
             <ModeToggle />
           </li>
