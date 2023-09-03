@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { ModeToggle } from "@/components/dark-mode-toggle";
+import NavItem from "./nav-item";
 
-export default function header() {
+export default function Header() {
   return (
     <header className="w-full">
       <nav className="flex justify-between p-10 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
@@ -14,54 +15,12 @@ export default function header() {
           </a>
         </div>
         <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              Alchemy Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              Blacksmith
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              General Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              Magic Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              Stables
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
-              href="/"
-            >
-              Tavern
-            </a>
-          </li>
+          <NavItem name={"Alchemy Shop"} link={"/"} />
+          <NavItem name={"Blacksmith"} link={"/"} />
+          <NavItem name={"General Shop"} link={"/"} />
+          <NavItem name={"Magic Shop"} link={"/"} />
+          <NavItem name={"Stables"} link={"/"} />
+          <NavItem name={"Tavern"} link={"/"} />
           <li className="border border-primary pt-6"></li>
           <li>
             <ModeToggle />
