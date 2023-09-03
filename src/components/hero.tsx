@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -10,8 +11,11 @@ export default function Hero() {
         <p className="md:text-lg lg:text-xl xl:text-3xl mt-3 text-white">
           Generate names for all your fantasy shop needs!
         </p>
-        <Button className="text-white lg:text-lg mt-8 font-bold animate-bounce">
-          Get Started
+        <Button
+          className="text-white lg:text-lg mt-8 font-bold animate-bounce"
+          asChild
+        >
+          <Link href="#creators">Get Started</Link>
         </Button>
       </div>
     </section>
