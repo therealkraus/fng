@@ -9,14 +9,14 @@ export default function header() {
           <a href="/">
             <Image src="/logo.png" width="50" height="50" alt="Site Logo" />
           </a>
-          <a className="text-xl font-semibold hover:text-primary" href="/">
-            FANTASTICAL NAME GENERATOR
+          <a className="text-2xl font-semibold hover:text-primary" href="/">
+            FANTASY NAME CREATOR
           </a>
         </div>
         <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               Alchemy Shop
@@ -24,7 +24,7 @@ export default function header() {
           </li>
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               Blacksmith
@@ -32,7 +32,7 @@ export default function header() {
           </li>
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               General Shop
@@ -40,7 +40,7 @@ export default function header() {
           </li>
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               Magic Shop
@@ -48,7 +48,7 @@ export default function header() {
           </li>
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               Stables
@@ -56,7 +56,7 @@ export default function header() {
           </li>
           <li>
             <a
-              className="hover:border-b-2 hover:border-primary hover:pb-2"
+              className="hover:border-b-2 hover:border-primary hover:pb-2 text-lg font-semibold"
               href="/"
             >
               Tavern
