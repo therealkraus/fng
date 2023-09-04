@@ -1,23 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "@/components/dark-mode-toggle";
 import NavItem from "./nav-item";
+import Logo from "./logo";
 
 export default function Header() {
   return (
     <header className="w-full">
       <nav className="flex justify-between p-10 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
-        <div className="flex flex-row gap-4 items-center justify-center">
+        <div className="flex flex-row gap-4 items-center justify-center hover:text-primary transition-colors duration-300 ease-in-out">
           <Link href="/">
-            <Image
-              src="/logo.png"
-              width={50}
-              height={50}
-              alt="Site Logo"
-              className="w-auto h-auto"
-            />
+            <Logo />
           </Link>
-          <Link className="text-2xl font-semibold hover:text-primary" href="/">
+          <Link className="text-2xl font-semibold" href="/">
             FANTASY NAME CREATOR
           </Link>
         </div>

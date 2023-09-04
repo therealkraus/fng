@@ -8,7 +8,7 @@ export default function Footer() {
           Made with ❤️ by{" "}
           <Link
             href="mailto:nikolailic25@live.ca"
-            className="font-bold text-white hover:text-primary transition-all duration-500 ease-in-out hover:border-b hover:border-primary"
+            className="font-bold text-white hover:text-primary transition-all duration-300 ease-in-out hover:border-b hover:border-primary"
           >
             @nikolailic
           </Link>
