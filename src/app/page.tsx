@@ -2,6 +2,7 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Cards from "@/components/cards";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Cards />
         <Footer />
+        <ScrollToTop />
       </main>
     </div>
   );
