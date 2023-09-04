@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ModeToggle } from "@/components/dark-mode-toggle";
 import NavItem from "./nav-item";
 
@@ -7,20 +8,20 @@ export default function Header() {
     <header className="w-full">
       <nav className="flex justify-between p-10 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
         <div className="flex flex-row gap-4 items-center justify-center">
-          <a href="/">
+          <Link href="/">
             <Image src="/logo.png" width="50" height="50" alt="Site Logo" />
-          </a>
-          <a className="text-2xl font-semibold hover:text-primary" href="/">
+          </Link>
+          <Link className="text-2xl font-semibold hover:text-primary" href="/">
             FANTASY NAME CREATOR
-          </a>
+          </Link>
         </div>
         <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
-          <NavItem name={"Alchemy Shop"} link={"/"} />
-          <NavItem name={"Blacksmith"} link={"/"} />
-          <NavItem name={"General Shop"} link={"/"} />
-          <NavItem name={"Magic Shop"} link={"/"} />
-          <NavItem name={"Stables"} link={"/"} />
-          <NavItem name={"Tavern"} link={"/"} />
+          <NavItem name={"Alchemy Shop"} link={"/creators/alchemy-shop"} />
+          <NavItem name={"Blacksmith"} link={"/creators/blacksmith-shop"} />
+          <NavItem name={"General Shop"} link={"/creators/general-shop"} />
+          <NavItem name={"Magic Shop"} link={"/creators/magic-shop"} />
+          <NavItem name={"Stables"} link={"/creators/stables-shop"} />
+          <NavItem name={"Tavern"} link={"/creators/tavern-shop"} />
           <li className="border border-primary pt-6 rounded-full"></li>
           <li>
             <ModeToggle />
