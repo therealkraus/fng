@@ -3,12 +3,12 @@ import Creators from "@/components/creators";
 export default function Cards() {
   return (
     <section id="creators">
-      <div className="flex flex-col items-center justify-center ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl pr-10 pl-10 pt-10 pb-40">
-        <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold">
+      <div className="ml-auto mr-auto flex flex-col items-center justify-center pb-40 pl-10 pr-10 pt-10 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+        <h1 className="text-3xl font-bold md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl">
           FANTASY SHOP CREATORS
         </h1>
-        <div className="w-32 bg-primary h-1 my-12 rounded-full"></div>
-        <ul className="grid xl:grid-cols-3 xl:gap-6 2xl:grid-cols-4 2xl:gap-8 md:grid-cols-2 md:gap-6 grid-cols-1 gap-4">
+        <div className="my-12 h-1 w-32 rounded-full bg-primary"></div>
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-6 2xl:grid-cols-4 2xl:gap-8">
           <Creators
             title={"ALCHEMY SHOP"}
             link={"/creators/alchemy-shop"}

@@ -8,9 +8,9 @@ export default function Creators(props: {
 }) {
   const { title, link, description, image } = props;
   return (
-    <li className="flex flex-col border bg-card text-card-foreground rounded-xl hover:outline hover:outline-2 hover:outline-primary transition-transform ease-in-out duration-500 hover:scale-105">
+    <li className="flex flex-col rounded-xl border bg-card text-card-foreground transition-transform duration-500 ease-in-out hover:scale-105 hover:outline hover:outline-2 hover:outline-primary">
       <Link href={link} target="_blank" rel="noopener noreferrer">
-        <div className="relative overflow-hidden h-32 sm:h-48 rounded-t-xl">
+        <div className="relative h-32 overflow-hidden rounded-t-xl sm:h-48">
           <Image
             src={image}
             alt="Shop Image"
@@ -19,7 +19,7 @@ export default function Creators(props: {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <article className="pt-5 pb-12 px-5">
+        <article className="px-5 pb-12 pt-5">
           <h1 className="text-xl font-bold">{title}</h1>
           <p className="pt-5 font-semibold">{description}</p>
         </article>

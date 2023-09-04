@@ -6,8 +6,8 @@ import Logo from "./logo";
 export default function Header() {
   return (
     <header className="w-full">
-      <nav className="flex justify-between p-10 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
-        <div className="flex flex-row gap-4 items-center justify-center hover:text-primary transition-colors duration-300 ease-in-out">
+      <nav className="ml-auto mr-auto flex items-center justify-between p-10 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+        <div className="flex flex-row items-center justify-center gap-4 transition-colors duration-300 ease-in-out hover:text-primary">
           <Link href="/">
             <Logo />
           </Link>
@@ -15,19 +15,19 @@ export default function Header() {
             FANTASY NAME CREATOR
           </Link>
         </div>
-        <ul className="lg:flex flex-row gap-8 items-center justify-center hidden">
+        <ul className="hidden flex-row items-center justify-center gap-8 lg:flex">
           <NavItem name={"Alchemy Shop"} link={"/creators/alchemy-shop"} />
           <NavItem name={"Blacksmith"} link={"/creators/blacksmith-shop"} />
           <NavItem name={"General Shop"} link={"/creators/general-shop"} />
           <NavItem name={"Magic Shop"} link={"/creators/magic-shop"} />
           <NavItem name={"Stables"} link={"/creators/stables-shop"} />
           <NavItem name={"Tavern"} link={"/creators/tavern-shop"} />
-          <li className="border border-primary pt-6 rounded-full"></li>
+          <li className="rounded-full border border-primary pt-6"></li>
           <li>
             <ModeToggle />
           </li>
         </ul>
-        <button className="w-6 h-6 block lg:hidden">
+        <button className="block h-6 w-6 lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
