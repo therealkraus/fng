@@ -9,7 +9,13 @@ export default function Header() {
       <nav className="flex justify-between p-10 ml-auto mr-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center">
         <div className="flex flex-row gap-4 items-center justify-center">
           <Link href="/">
-            <Image src="/logo.png" width="50" height="50" alt="Site Logo" />
+            <Image
+              src="/logo.png"
+              width={50}
+              height={50}
+              alt="Site Logo"
+              className="w-auto h-auto"
+            />
           </Link>
           <Link className="text-2xl font-semibold hover:text-primary" href="/">
             FANTASY NAME CREATOR

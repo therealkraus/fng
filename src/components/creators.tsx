@@ -16,6 +16,7 @@ export default function Creators(props: {
             alt="Shop Image"
             fill={true}
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <article className="pt-5 pb-12 px-5">
